@@ -1,0 +1,230 @@
+/* css reset (default size,sale margin elements is zero,default font,etc */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height:59px;
+
+}
+
+/* navigation bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    opacity: 9.2;
+}
+
+/* logo and image  */
+#logo{
+   margin: 10px 34px; 
+   height: 34px;
+}
+#logo img{  /* logo img height margin*/
+    height: 46px;
+    margin: -24px -15px;
+    border: 1px;
+}
+
+/* Navigation bar: List styling  */
+
+#navbar ul{
+    display: flex; /* Home about us .......contact us*/
+    font-family: 'Roboto', sans-serif;
+   
+}
+#navbar::before{
+    content: ""; /* content = blank*/
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5; /* blackground color thikness*/
+}
+#navbar ul li{
+    /* color: white; */
+    list-style: none; /* bindu bindu nhi ayenge*/
+    font-size: 1.3rem;
+    
+}
+#navbar ul li a{  /* padding in (ul li a)if mei hover kru to ho jaye*/
+   display: block;
+   padding: 3px 22px;
+   border-radius:20px ;
+   font-size: 18px;
+   text-decoration: none;  /* removes underline  */
+   color: black;  /* color of (Home,.....,contact us)*/
+
+}
+
+#navbar ul li a:hover{  /* */
+    color: black;
+    background-color: rgb(143, 194, 201);
+}
+
+/* Home section  */
+#home{
+    display: flex;
+    flex-direction: column; /* for input in colume */
+    padding: 3px 250px;
+    height: 825px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: ""; /* content = blank*/
+    position: absolute;
+    background: url('../img/b2.jpg')no-repeat center center/cover;  /* (.. = two folder/img/B1.jpg) for background img =(no-repeat center center/cover = no repeat imag)*/
+    top: 0px;
+    left: 0px;
+    height: 770px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.68; /* blackground color thikness*/  
+}
+#home h1{
+    color:black;
+    text-align: center;
+    font-family: font-family: 'Roboto Condensed', sans-serif;
+}
+#home p{
+    color:rgba(15, 7, 7, 0.911);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: font-family: 'Roboto Condensed', sans-serif;
+}
+/* services container  */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border-radius: 23px;
+    padding: 0px;
+    background-color: #f3efef;
+    margin: -15px 16px;
+    border: 2px solid brown;
+}
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+#services .box p{
+    font-family: font-family: 'Roboto Condensed', sans-serif;
+}
+
+#services{}
+#services{}
+#services{}
+
+
+/* client section 
+#clients-section{
+    position: relative;
+   height: 344px;
+}
+#clients{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clients-items{/* (clients logo img )
+    padding: 35px;
+}
+
+
+#clients img{
+ height: 124px; /* client img height
+ padding: 6px;
+ height: auto;
+}
+
+
+
+#clients-section::before{ /* our client img section
+    content: "";
+    position: absolute;
+    background: url('../img/b2.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+} */
+
+/* contact section  */
+#contact{
+    position: relative;
+    
+    
+}
+#contact::before{
+    content: "";
+    padding: 0px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../img/contact\ us\ bg1.jfif')no-repeat center center/cover;
+    /* background-color: rgb(230, 193, 240); */
+    
+}
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px; 
+}
+
+ #contact-box input,
+#contact-box textarea{
+    width:100%; 
+    padding:0.5rem;
+
+}
+   #contact-box form{
+       width: 40%;
+   } 
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* utility classe*/
+.h-primary{
+    font-family: font-family: 'Roboto Condensed', sans-serif;
+    font-size: 3.8rem;
+    padding: -120px;
+
+}
+.h-secondary{
+    font-family: font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2.1rem;
+    padding: 12px;
+
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(152, 189, 201); /* order now color*/
+    color: rgb(6, 12, 12);
+    margin: 17px;
+    font-size: 1.0rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center; /* our services*/
+}
